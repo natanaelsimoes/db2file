@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class DB2FILE\Converter | db2file</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li>
+					<a href="namespace-Composer.html">
+						Composer<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Composer.Autoload.html">
+						Autoload					</a>
+
+						</li>
+							</ul></li>
+				<li class="active">
+					<a href="namespace-DB2FILE.html">
+						DB2FILE					</a>
+
+						</li>
+				<li>
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-DB2FILE.Converter.html">Converter</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-DB2FILE.html" title="Summary of DB2FILE"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Converter</h1>
+
+
+	<div class="description">
+	<p>Retrieve data from database and generate/print JSON or XML file</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-DB2FILE.html">DB2FILE</a><br>
+		<b>Package:</b> DB2FILE<br>
+
+				<b>Copyright:</b>
+				(c) 2016, Natanael Simões<br>
+				<b>License:</b>
+				<a href="http://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons 4.0 International</a><br>
+				<b>Author:</b>
+				Natanael Simões <a href="&#109;&#97;&#x69;&#x6c;&#116;&#111;&#x3a;&#x6e;&#97;&#116;&#x61;&#x6e;&#97;&#101;&#x6c;&#x2e;s&#105;&#x6d;&#x6f;e&#115;&#64;&#x69;&#x66;&#114;&#111;&#x2e;&#x65;&#100;&#117;&#x2e;&#x62;&#114;">&#x6e;&#97;&#116;&#x61;&#x6e;&#97;&#101;&#x6c;&#x2e;s&#105;&#x6d;&#x6f;e&#115;&#64;&#x69;&#x66;&#114;&#111;&#x2e;&#x65;&#100;&#117;&#x2e;&#x62;&#114;</a><br>
+				<b>Version:</b>
+				1.0<br>
+				<b>Link:</b>
+				<a href="https://github.com/natanaelsimoes/db2file">GitHub Repository</a><br>
+			<b>Located at</b> <a href="source-class-DB2FILE.Converter.html#5-264" title="Go to source code">src/Converter.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-DB2FILE.Converter.html#37-87" title="Go to source code">__construct</a>( <span>integer <var>$driver</var></span>, <span>string <var>$dbname</var></span>, <span>string <var>$host</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$username</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$password</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$charset</var> = <span class="php-quote">'utf8'</span></span>, <span>integer <var>$port</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$options</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Instantiates a new Converter object.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Instantiates a new Converter object.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$driver</var></dt>
+					<dd><p>Database driver. It values can be:</p>
+
+<ul>
+ <li>DB2FILE\Converter::FIREBIRD</li>
+ <li>DB2FILE\Converter::MYSQL</li>
+ <li>DB2FILE\Converter::ORACLE</li>
+ <li>DB2FILE\Converter::POSTGRES</li>
+ <li>DB2FILE\Converter::SQLITE</li>
+ <li>DB2FILE\Converter::SQLSERVER</li>
+</ul></dd>
+					<dt><var>$dbname</var></dt>
+					<dd>Database name or path.</dd>
+					<dt><var>$host</var></dt>
+					<dd>Domain name or IP of database host.</dd>
+					<dt><var>$username</var></dt>
+					<dd>Database user name.</dd>
+					<dt><var>$password</var></dt>
+					<dd>Database password.</dd>
+					<dt><var>$charset</var></dt>
+					<dd>Retrieves data encoded with this charset.</dd>
+					<dt><var>$port</var></dt>
+					<dd>Port running database service.</dd>
+					<dt><var>$options</var></dt>
+					<dd>PDO array options (depends on driver). See more about it at <a target="_blank" href="http://php.net/manual/pt_BR/pdo.construct.php">official documentation</a></dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					Exception
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getJSONFromTable" id="_getJSONFromTable">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getJSONFromTable">#</a>
+		<code><a href="source-class-DB2FILE.Converter.html#89-100" title="Go to source code">getJSONFromTable</a>( <span>string <var>$tablename</var></span>, <span>integer <var>$count</var> = -<span class="php-num">1</span></span>, <span>integer <var>$offset</var> = <span class="php-num">0</span></span> )</code>
+
+		<div class="description short">
+			<p>Returns the content of a JSON file with table rows.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the content of a JSON file with table rows.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tablename</var></dt>
+					<dd>The table name.</dd>
+					<dt><var>$count</var></dt>
+					<dd>Number of records to get.</dd>
+					<dt><var>$offset</var></dt>
+					<dd>Offset to start counting.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>The JSON file content.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getJSONFromQuery" id="_getJSONFromQuery">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getJSONFromQuery">#</a>
+		<code><a href="source-class-DB2FILE.Converter.html#102-111" title="Go to source code">getJSONFromQuery</a>( <span>string <var>$query</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns the content of a JSON file with query resulting rows.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the content of a JSON file with query resulting rows.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd>A SQL query.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>The JSON file content.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getXMLFromTable" id="_getXMLFromTable">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getXMLFromTable">#</a>
+		<code><a href="source-class-DB2FILE.Converter.html#113-127" title="Go to source code">getXMLFromTable</a>( <span>string <var>$tablename</var></span>, <span>integer <var>$count</var> = -<span class="php-num">1</span></span>, <span>integer <var>$offset</var> = <span class="php-num">0</span></span>, <span>string <var>$tableElement</var> = <span class="php-quote">'dataset'</span></span>, <span>string <var>$rowElement</var> = <span class="php-quote">'datarow'</span></span> )</code>
+
+		<div class="description short">
+			<p>Returns the content of a XML file with table rows encoding with the
+database charset.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the content of a XML file with table rows encoding with the
+database charset.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tablename</var></dt>
+					<dd>The table name.</dd>
+					<dt><var>$count</var></dt>
+					<dd>Number of records to get.</dd>
+					<dt><var>$offset</var></dt>
+					<dd>Offset to start counting.</dd>
+					<dt><var>$tableElement</var></dt>
+					<dd>Represents the entire set of data.</dd>
+					<dt><var>$rowElement</var></dt>
+					<dd>Represents each row data set.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>The XML file content.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getXMLFromQuery" id="_getXMLFromQuery">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getXMLFromQuery">#</a>
+		<code><a href="source-class-DB2FILE.Converter.html#129-141" title="Go to source code">getXMLFromQuery</a>( <span>string <var>$query</var></span>, <span>string <var>$tableElement</var> = <span class="php-quote">'dataset'</span></span>, <span>string <var>$rowElement</var> = <span class="php-quote">'datarow'</span></span> )</code>
+
+		<div class="description short">
+			<p>Returns the content of a XML file with query resulting rows encoding with
+the database charset.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the content of a XML file with query resulting rows encoding with
+the database charset.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd>A SQL query.</dd>
+					<dt><var>$tableElement</var></dt>
+					<dd>Represents the entire set of data.</dd>
+					<dt><var>$rowElement</var></dt>
+					<dd>Represents each row data set.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>The XML file content.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTable" id="_getTable">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTable">#</a>
+		<code><a href="source-class-DB2FILE.Converter.html#143-158" title="Go to source code">getTable</a>( <span>string <var>$tablename</var></span>, <span>integer <var>$count</var> = -<span class="php-num">1</span></span>, <span>integer <var>$offset</var> = <span class="php-num">0</span></span> )</code>
+
+		<div class="description short">
+			<p>Returns an array with table rows.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns an array with table rows.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tablename</var></dt>
+					<dd>The table name.</dd>
+					<dt><var>$count</var></dt>
+					<dd>Number of records to get.</dd>
+					<dt><var>$offset</var></dt>
+					<dd>Offset to start counting.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array<br>The resulting array.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getQuery" id="_getQuery">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getQuery">#</a>
+		<code><a href="source-class-DB2FILE.Converter.html#160-170" title="Go to source code">getQuery</a>( <span>string <var>$query</var></span> )</code>
+
+		<div class="description short">
+			<p>Returns an array with query resulting rows.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns an array with query resulting rows.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd>A SQL query.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array<br>The resulting array.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="printJSONFromTable" id="_printJSONFromTable">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_printJSONFromTable">#</a>
+		<code><a href="source-class-DB2FILE.Converter.html#172-183" title="Go to source code">printJSONFromTable</a>( <span>string <var>$tablename</var></span>, <span>integer <var>$count</var> = -<span class="php-num">1</span></span>, <span>integer <var>$offset</var> = <span class="php-num">0</span></span> )</code>
+
+		<div class="description short">
+			<p>Prints a JSON file with table rows. This should be the only content sent
+to screen.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Prints a JSON file with table rows. This should be the only content sent
+to screen.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tablename</var></dt>
+					<dd>The table name.</dd>
+					<dt><var>$count</var></dt>
+					<dd>Number of records to get.</dd>
+					<dt><var>$offset</var></dt>
+					<dd>Offset to start counting.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="printJSONFromQuery" id="_printJSONFromQuery">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_printJSONFromQuery">#</a>
+		<code><a href="source-class-DB2FILE.Converter.html#185-194" title="Go to source code">printJSONFromQuery</a>( <span>string <var>$query</var></span> )</code>
+
+		<div class="description short">
+			<p>Prints a JSON file with query resulting rows. This should be the only
+content sent to screen.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Prints a JSON file with query resulting rows. This should be the only
+content sent to screen.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd>A SQL query.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="printXMLFromTable" id="_printXMLFromTable">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_printXMLFromTable">#</a>
+		<code><a href="source-class-DB2FILE.Converter.html#196-209" title="Go to source code">printXMLFromTable</a>( <span>string <var>$tablename</var></span>, <span>integer <var>$count</var> = -<span class="php-num">1</span></span>, <span>integer <var>$offset</var> = <span class="php-num">0</span></span>, <span>string <var>$tableElement</var> = <span class="php-quote">'dataset'</span></span>, <span>string <var>$rowElement</var> = <span class="php-quote">'datarow'</span></span> )</code>
+
+		<div class="description short">
+			<p>Prints a XML file with table rows encoding with the database
+charset. This should be the only content sent to screen.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Prints a XML file with table rows encoding with the database
+charset. This should be the only content sent to screen.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tablename</var></dt>
+					<dd>The table name.</dd>
+					<dt><var>$count</var></dt>
+					<dd>Number of records to get.</dd>
+					<dt><var>$offset</var></dt>
+					<dd>Offset to start counting.</dd>
+					<dt><var>$tableElement</var></dt>
+					<dd>Represents the entire set of data.</dd>
+					<dt><var>$rowElement</var></dt>
+					<dd>Represents each row data set.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="printXMLFromQuery" id="_printXMLFromQuery">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_printXMLFromQuery">#</a>
+		<code><a href="source-class-DB2FILE.Converter.html#211-222" title="Go to source code">printXMLFromQuery</a>( <span>string <var>$query</var></span>, <span>string <var>$tableElement</var> = <span class="php-quote">'dataset'</span></span>, <span>string <var>$rowElement</var> = <span class="php-quote">'datarow'</span></span> )</code>
+
+		<div class="description short">
+			<p>Prints a XML file with query resulting rows encoding with the database
+charset. This should be the only content sent to screen.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Prints a XML file with query resulting rows encoding with the database
+charset. This should be the only content sent to screen.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$query</var></dt>
+					<dd>A SQL query.</dd>
+					<dt><var>$tableElement</var></dt>
+					<dd>Represents the entire set of data.</dd>
+					<dt><var>$rowElement</var></dt>
+					<dd>Represents each row data set.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary constants" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="FIREBIRD" id="FIREBIRD">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-DB2FILE.Converter.html#18" title="Go to source code"><b>FIREBIRD</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#FIREBIRD" class="anchor">#</a>
+				<code><span class="php-num">0</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="MYSQL" id="MYSQL">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-DB2FILE.Converter.html#19" title="Go to source code"><b>MYSQL</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#MYSQL" class="anchor">#</a>
+				<code><span class="php-num">1</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="ORACLE" id="ORACLE">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-DB2FILE.Converter.html#20" title="Go to source code"><b>ORACLE</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#ORACLE" class="anchor">#</a>
+				<code><span class="php-num">2</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="POSTGRES" id="POSTGRES">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-DB2FILE.Converter.html#21" title="Go to source code"><b>POSTGRES</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#POSTGRES" class="anchor">#</a>
+				<code><span class="php-num">3</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="SQLITE" id="SQLITE">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-DB2FILE.Converter.html#22" title="Go to source code"><b>SQLITE</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#SQLITE" class="anchor">#</a>
+				<code><span class="php-num">4</span></code>
+			</div>
+		</td>
+	</tr>
+	<tr data-order="SQLSERVER" id="SQLSERVER">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-DB2FILE.Converter.html#23" title="Go to source code"><b>SQLSERVER</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#SQLSERVER" class="anchor">#</a>
+				<code><span class="php-num">5</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		db2file API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

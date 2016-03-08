@@ -1,0 +1,24 @@
+{
+    "name": "natanaelsimoes/db2file",
+    "type": "library",
+    "description": "Retrieve data from database and generate/print JSON or XML file.",
+    "keywords": ["converter", "conversion", "database", "json", "xml"],
+    "homepage": "https://github.com/natanaelsimoes/db2file",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Natanael Simões",
+            "email": "natanael.simoes@ifro.edu.br",
+            "homepage": "http://www.natanaelsimoes.com",
+            "role": "Professor"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DB2FILE\\": "src/"
+        }
+    }
+}
