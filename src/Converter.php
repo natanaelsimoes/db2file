@@ -106,7 +106,7 @@ class Converter
      */
     public function getJSONFromQuery($query)
     {
-        $table = $this->getFromQuery($query);
+        $table = $this->getQuery($query);
         return $this->generateJSON($table);
     }
 
@@ -136,7 +136,7 @@ class Converter
      */
     public function getXMLFromQuery($query, $tableElement = 'dataset', $rowElement = 'datarow')
     {
-        $table = $this->getFromQuery($query);
+        $table = $this->getQuery($query);
         return $this->generateXML($table, $tableElement, $rowElement);
     }
 
