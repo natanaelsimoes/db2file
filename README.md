@@ -9,7 +9,7 @@ Add in your `composer.json`:
 ```json
 {
     "require": {
-        "natanaelsimoes/db2file": "v0.9"
+        "natanaelsimoes/db2file": "1.0.0-beta"
     }
 }
 ```
